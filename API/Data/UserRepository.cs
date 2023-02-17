@@ -56,11 +56,6 @@ namespace API.Data
             return await _context.Users.FindAsync(id);
         }
 
-        public Task<MemberDto> GetMemeberAsync()
-        { 
-            throw new NotImplementedException();
-        }
-
         public async Task<IEnumerable<MemberDto>> GetMemberAsync()
         {
             return await _context.Users
