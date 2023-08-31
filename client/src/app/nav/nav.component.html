@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
             <a class="navbar-brand" routerLink="/">Marriage App</a>
-              <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
-                <ng-container>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
-                  </li>
+              <ul class="navbar-nav mr-auto" >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+                </li>
+                <ng-container *ngIf="accountService.currentUser$ | async">
                   <li class="nav-item">
                     <a class="nav-link" routerLink="/members" routerLinkActive="active">Matches</a>
                   </li>
@@ -34,7 +34,7 @@
                  [(ngModel)]="model.username"
                 class="form-control mr-sm-2" 
                 type="text" 
-                placeholder="Username" >
+                placeholder="Username">
                 <input class="form-control mr-sm-2" type="password"
                 name="password"
                 [(ngModel)]="model.password"
