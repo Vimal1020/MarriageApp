@@ -1083,6 +1083,7 @@ client/.angular/cache/16.2.1/babel-webpack/9ee98442b4d2474f02859b22fe944287806b3
 client/.angular/cache/16.2.1/babel-webpack/d2b56ea35c9bd065502d11d48f9e03af95ad00a7438e4cd228dfa3af99c11844.json
 client/.angular/cache/16.2.1/babel-webpack/dfca399722a57c1ed7401130adfc26c2dafcef0192958984cd70d8575c3bd720.json
 client/.angular/cache/16.2.1/babel-webpack/e1a33bf3d6f4010c15f842d64a16c5d5ff7ac52b08f50a5777a7a2bcc4c5b32a.json
+client/src/app/members/photo-editor/photo-editor.component.ts
 client/.angular/cache/16.2.1/babel-webpack/0bbf80908b496dee76b7de9341061c0218b0755a244bab5eeb865a0a3f9fd49f.json
 client/.angular/cache/16.2.1/babel-webpack/0f39bbb2c7ea23134462ff0fd7a809e253d65d7a51d19f286c2ee3665fcc507a.json
 client/.angular/cache/16.2.1/babel-webpack/1b9ff880334474bbcfd97c75953afc2bd0c596f97e1e819a901a3e500244b1e7.json
@@ -1101,8 +1102,6 @@ client/.angular/cache/16.2.1/babel-webpack/3a3ed660424c1fd7cf97293e043451ac0bd4e
 client/.angular/cache/16.2.1/babel-webpack/3eb14b749944fcbaa8800da75b270a18ff449b06d8fa220a8bc69c744298283e.json
 client/.angular/cache/16.2.1/babel-webpack/3eeb8eea6efc15866433022598a4648e70bc4662e2347587f13253083ec331fb.json
 client/.angular/cache/16.2.1/babel-webpack/3f5fa1a151730cb305d23a1da9b39ebd1106dc842e2726a78bae9a9aab18ca8c.json
-client/.angular/cache/16.2.1/babel-webpack/3fd3c0bc1c72a76a24cd6e80dd2b233356c9809580a4d58d8a0f2f6718f120ea.json
-client/.angular/cache/16.2.1/babel-webpack/4a32c3bf6ca12b72b1e5b92eba13554a1ff4bda031aaa18daebd5af0bc259277.json
 client/.angular/cache/16.2.1/babel-webpack/4b00001bcaf26ea4b4fd24837c2bd289e030cb3bdb607dae78e873bdde2317b9.json
 client/.angular/cache/16.2.1/babel-webpack/04b4a76f1e99dd26311a751078a16666ac471ee0b57fac7037413ee2a1b37b6f.json
 client/.angular/cache/16.2.1/babel-webpack/4cccf85cb7e4bd76297aca8cebb0daef60d76147941f4b0ce115482a8fcb7861.json
@@ -1129,7 +1128,6 @@ client/.angular/cache/16.2.1/babel-webpack/32a8437378296e6c56a6b09d131a585376e55
 client/.angular/cache/16.2.1/babel-webpack/40b0353d0eefb815b9cddafa81d2bfb37f27114b0bd84fb7ab20efad4fa2b33f.json
 client/.angular/cache/16.2.1/babel-webpack/41cfdf37f1bf9ac91fe3d83815f372d73e8b867212e02af9abb93b69356fc640.json
 client/.angular/cache/16.2.1/babel-webpack/43a752fc54f252d2545e2df6a91788de90076409c8c747b67a560d63588d0e96.json
-client/.angular/cache/16.2.1/babel-webpack/43fbe515fce13f8f4085b7243f93a8b118fa5d22c8ba5dc5e5ede750b9a23ec9.json
 client/.angular/cache/16.2.1/babel-webpack/50dc6c046dba3a0f65d2c3aa218939f60e2769c24f4a45831d06ef479a651498.json
 client/.angular/cache/16.2.1/babel-webpack/51ce0e6fbac57c4a89b100e4fba201753a2d26a32681f238b9acdd69caaa8e4c.json
 client/.angular/cache/16.2.1/babel-webpack/052ddfea2f140f7487a9f9632644a57eddf461977b20ef60b3d693aa41b4b82d.json
@@ -1157,7 +1155,6 @@ client/.angular/cache/16.2.1/babel-webpack/980ae8e61ff653e836b4b5a46da7645290202
 client/.angular/cache/16.2.1/babel-webpack/1947aec8da133359df57078cfe64f60f2f1fb2fc9254f5a5bed59608f809fdad.json
 client/.angular/cache/16.2.1/babel-webpack/1997ad056a46fd32421a6692cced2918aa5d2fab53cae6d44bf0d379a444e84f.json
 client/.angular/cache/16.2.1/babel-webpack/2375a894f8b7ac587a5f760d06f23579dae119c128394e1b1669ef370b874316.json
-client/.angular/cache/16.2.1/babel-webpack/2536e0c578ba1cfacf197b907f3d9069c50b19cf636cc5cc5708e71994bb8017.json
 client/.angular/cache/16.2.1/babel-webpack/2791de63bac99e3af73769f851ddac25b80f258f3ca5d383e2c73cbefbf5d439.json
 client/.angular/cache/16.2.1/babel-webpack/3319ea94ce7c577141cab97ad3e16cd19954395bffcbb46b40b5e1fe1b32b329.json
 client/.angular/cache/16.2.1/babel-webpack/5204d83a61491c9f20496960dbd1947f991e99d04988569806d30289250f465f.json
@@ -1248,5 +1245,10 @@ client/.angular/cache/16.2.1/babel-webpack/fcef9da705f917c9e7135ab5983736aa65a6f
 client/.angular/cache/16.2.1/babel-webpack/fd43503b85d88c6387624368ce8be0b3034f771189eb2af797d8ed598d6b1d4f.json
 client/.angular/cache/16.2.1/babel-webpack/fdd658b041f1c95c71b39f24027c1a2bd8627e868dc6a9bd978ef81c42f1b72e.json
 client/.angular/cache/16.2.1/babel-webpack/ffc3ff20501e8b97bb567b3a7773d076dba22936c6a6d38652588a6324ea2972.json
-.gitignore
+client/.angular/cache/16.2.1/babel-webpack/3fd3c0bc1c72a76a24cd6e80dd2b233356c9809580a4d58d8a0f2f6718f120ea.json
+client/.angular/cache/16.2.1/babel-webpack/4a32c3bf6ca12b72b1e5b92eba13554a1ff4bda031aaa18daebd5af0bc259277.json
+client/.angular/cache/16.2.1/babel-webpack/43fbe515fce13f8f4085b7243f93a8b118fa5d22c8ba5dc5e5ede750b9a23ec9.json
+client/.angular/cache/16.2.1/babel-webpack/2536e0c578ba1cfacf197b907f3d9069c50b19cf636cc5cc5708e71994bb8017.json
+API/datingapp.db-shm
+API/datingapp.db-wal
 client/.angular/cache/16.2.1/babel-webpack/8fc2be1f1a804c181ec2deda276312c21cc7cffd7ac9d869d12bda4767b3d84f.json
