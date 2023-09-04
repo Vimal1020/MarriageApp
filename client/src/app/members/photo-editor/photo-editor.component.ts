@@ -1,10 +1,10 @@
 import { AUTO_STYLE } from '@angular/animations';
 import { Component, Input } from '@angular/core';
-import { FileUploader } from 'ng2-file-upload/file-upload/file-uploader.class';
 import { Member } from 'src/app/_models/Member';
 import { User } from 'src/app/_models/user';
 import { AccountService } from 'src/app/_services/account.service';
 import { environment } from 'src/environments/environment';
+import { FileUploader } from 'ng2-file-upload';
 import { take } from 'rxjs/operators';
 
 @Component({
