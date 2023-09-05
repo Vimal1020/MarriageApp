@@ -115,7 +115,7 @@ namespace API.Controllers
 
                 if(result.Error != null) return BadRequest(result.Error.Message);
             }
-            user.Photo.Remove(photo);
+            user.Photos.Remove(photo);
             if(await _userRepository.SaveAllAsync()) return Ok();
 
             return BadRequest("Failed to delete the photo");
