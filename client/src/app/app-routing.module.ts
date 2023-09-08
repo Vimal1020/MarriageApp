@@ -13,7 +13,7 @@ import { AuthGuard } from './_guards/auth.guard';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: '',runGuardsAndResolvers:'always',
+  {path: '', runGuardsAndResolvers:'always',
   canActivate: [AuthGuard],
   children: [
     {path: 'members', component: MemberListComponent},
