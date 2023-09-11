@@ -56,5 +56,26 @@ namespace API.Controllers
                 users.PageSize,users.TotalCount,users.TotalPages);
             return Ok(users);
         }
+
+        [HttpDelete("dislike")]
+        public async Task<ActionResult> DislikeUser(string username) 
+        {
+            var sourceUserId = User.GetUserId();
+
+            var sourceUser = await _likesRepository.GetUserWithLikes(sourceUserId);
+            var likedUser = await _userRepository.GetUserByUsernameAsync(username);
+
+            if (likedUser == null) return NotFound("Didn't find the liked user");
+
+            var userDisLike = await _likesRepository.GetUserToDislikeAsync(sourceUserId, likedUser.Id);
+            if (userDisLike != null) 
+            {
+                sourceUser.LikedUsers.Remove(userDisLike);
+                if (await _userRepository.SaveAllAsync()) 
+                    return Ok();
+
+            }
+            return BadRequest("You haven't liked that user");
+        }
     }
 }

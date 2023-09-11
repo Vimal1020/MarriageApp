@@ -1,7 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Member } from 'src/app/_models/Member';
+import { UserParams } from 'src/app/_models/userParams';
 import { MembersService } from 'src/app/_services/members.service';
+import { MemberEditComponent } from '../member-edit/member-edit.component';
 
 @Component({
   selector: 'app-member-card',
@@ -18,9 +20,15 @@ export class MemberCardComponent implements OnInit {
 
   addLike(member: Member){
     this.memberService.addLike(member.username).subscribe(() => {
-      this.toastr.success("You have liked " + member.knownAs);
+      this.toastr.success("You have liked " + member.knownAs); 
+      this.memberService.memberCache.get(Object.values);
     })
   }
-
+  addDislike(member: Member){
+    this.memberService.addDislike(member.username).subscribe(() => {
+      this.toastr.success("You have disliked " + member.knownAs);
+      window.location.reload();
+    })
+  }
 
 }

@@ -51,6 +51,13 @@ namespace API.Data
             return await PagedList<LikedDto>.CreateAsync(likedUsers, likesParams.PageNumber, likesParams.PageSize);
         }
 
+        public async Task<UserLike> GetUserToDislikeAsync(int source, int likeUser)
+        {
+            var user = await _context.Likes
+                         .SingleOrDefaultAsync(likeuser => likeuser.SourceUserId == source && likeuser.LikedUserId == likeUser);
+            return user;
+        }
+
         public async Task<AppUser> GetUserWithLikes(int userId)
         {
             return await _context.Users
