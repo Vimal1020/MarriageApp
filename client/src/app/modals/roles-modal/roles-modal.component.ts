@@ -1,7 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { User } from 'src/app/_models/user';
-import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-roles-modal',
@@ -17,9 +16,8 @@ export class RolesModalComponent {
 
   updateRoles()
   {
-    this.roles.forEach(role => {
-      this.updateSelectedRoles.emit(role);
-    });
+    this.updateSelectedRoles.emit(this.roles);
+  
     this.bsModalRef.hide();
   }
 
