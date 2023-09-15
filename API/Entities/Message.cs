@@ -1,7 +1,7 @@
 ﻿namespace API.Entities
 {
     public class Message
-    {
+    { 
         public int Id { get; set; }
         public int SenderId { get; set; }
         public string SenderUsername { get; set; }
