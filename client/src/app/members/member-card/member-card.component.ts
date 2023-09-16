@@ -1,10 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Member } from 'src/app/_models/Member';
-import { UserParams } from 'src/app/_models/userParams';
 import { MembersService } from 'src/app/_services/members.service';
 import { PresenceService } from 'src/app/_services/presence.service';
-import { MemberEditComponent } from '../member-edit/member-edit.component';
 
 @Component({
   selector: 'app-member-card',

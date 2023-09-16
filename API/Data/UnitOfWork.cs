@@ -14,6 +14,8 @@ namespace API.Data
             _mapper = mapper;
         }
 
+        public IPhotoRepository PhotoRepository => new PhotoRepository(_context, _mapper);
+
         public IUserRepository UserRepository => new UserRepository(_context, _mapper);
 
         public IMessageRepository MessageRepository => new MessageRepository(_context,_mapper);

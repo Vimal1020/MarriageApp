@@ -3,11 +3,6 @@ using API.Interfaces;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Threading.Tasks;
 
 namespace API.Services
 {
@@ -36,7 +31,7 @@ namespace API.Services
                     File = new FileDescription(file.FileName, stream),
                     Transformation = new Transformation().Height(500).Width(500).Crop("fill").Gravity("face")
                 };
-                updloadResult =  await _cloudinary.UploadAsync(uploadParams);
+                updloadResult = await _cloudinary.UploadAsync(uploadParams);
             }
             return updloadResult;
         }
@@ -48,6 +43,6 @@ namespace API.Services
             var result = await _cloudinary.DestroyAsync(deleteParams);
             return result;
         }
-      
+
     }
 }

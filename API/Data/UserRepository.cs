@@ -26,6 +26,7 @@ namespace API.Data
         public async Task<AppUser> GetUserByUsernameAsync(string username)
         {
             return await _context.Users
+                            .IgnoreQueryFilters()
                          .Include(p => p.Photos)
                          .SingleOrDefaultAsync(x => x.UserName == username);
         }
@@ -67,12 +68,19 @@ namespace API.Data
                 , userParams.PageNumber, userParams.PageSize);
         }
 
-        public async Task<MemberDto> GetMemberAsync(string username)
+        public async Task<MemberDto> GetMemberAsync(string username,bool? currentUser)
         {
-            return await _context.Users
+            var query =  _context.Users
                     .Where(x => x.UserName == username)
                    .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
-                   .SingleOrDefaultAsync();
+                   .AsQueryable();
+
+            if (currentUser == true)
+            {
+                query = query.IgnoreQueryFilters();
+            }
+
+            return await query.FirstOrDefaultAsync();
         }
 
         public async Task<string> GetUserGender(string username)
@@ -80,5 +88,6 @@ namespace API.Data
             return await _context.Users.Where(x => x.UserName == username)
                 .Select(x => x.Gender).FirstOrDefaultAsync();
         }
+
     }
 }
