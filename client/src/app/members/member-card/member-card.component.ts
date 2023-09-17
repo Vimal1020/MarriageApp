@@ -27,7 +27,7 @@ export class MemberCardComponent implements OnInit {
   addDislike(member: Member){
     this.memberService.addDislike(member.username).subscribe(() => {
       this.toastr.success("You have disliked " + member.knownAs);
-      window.location.reload();
+      //window.location.reload();
     })
   }
 
